@@ -1,0 +1,26 @@
+{
+  "name": "tn80s-ui-pack",
+  "displayName": "tn80s-ui-pack",
+  "description": "Convenience UI style pack",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tomorrow Night 80s & Code Dark 2026",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tn80s-pure.json"
+      },
+      {
+        "label": "Tomorrow Night 80s Bright Chroma",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tn80s-chroma.json"
+      }
+    ]
+  }
+}
