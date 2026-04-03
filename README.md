@@ -4,10 +4,10 @@ A VS Code extension providing the **Tomorrow Night 80s** dark color theme family
 
 ## Themes
 
-| Label | File |
-| --- | --- |
-| Tomorrow Night 80s & Code Dark 2026 | `themes/tn80s-pure.json` |
-| Tomorrow Night 80s Bright Chroma | `themes/tn80s-chroma.json` |
+| Label                               | File                       |
+| ----------------------------------- | -------------------------- |
+| Tomorrow Night 80s & Code Dark 2026 | `themes/tn80s-pure.json`   |
+| Tomorrow Night 80s Bright Chroma    | `themes/tn80s-chroma.json` |
 
 Each theme file is a standard VS Code color theme JSON containing two sections:
 
@@ -49,13 +49,13 @@ node src/generate-swatches.js themes/tn80s-pure.json tn80s-pure.pen
 
 Key and value transformations are defined as standalone functions at the top of the script, making them easy to override:
 
-| Function | Purpose |
-| --- | --- |
-| `transformColorKey(key)` | Reshape a `colors` token name |
-| `transformColorValue(value)` | Reshape a `colors` hex value |
-| `transformTokenKey(scope)` | Convert a scope string or array to a label (default: join with `\|`) |
-| `transformTokenValue(foreground)` | Reshape a `tokenColors` foreground value |
-| `transformFontStyle(fontStyle)` | Map `fontStyle` strings to Pencil text properties |
+| Function                          | Purpose                                                           |
+| --------------------------------- | ----------------------------------------------------------------- |
+| `transformColorKey(key)`          | Reshape a `colors` token name                                     |
+| `transformColorValue(value)`      | Reshape a `colors` hex value                                      |
+| `transformTokenKey(scope)`        | Convert a scope string or array to a label (default: join with `\ |
+| `transformTokenValue(foreground)` | Reshape a `tokenColors` foreground value                          |
+| `transformFontStyle(fontStyle)`   | Map `fontStyle` strings to Pencil text properties                 |
 
 ## Generating theme JSON from a Pencil file
 
@@ -86,10 +86,20 @@ node src/generate-json.js --watch tn80s-pure.pen themes/tn80s-pure.json
 
 Each transformation step is a standalone function for easy override:
 
-| Function | Purpose |
-| --- | --- |
-| `restoreColorKey(name)` | Strip `#` prefix from frame name to recover the token key |
-| `restoreColorValue(fill)` | Map rectangle fill back to a `colors` hex value |
-| `restoreTokenScope(name)` | Strip `$`, split on `\|` → single string or array |
-| `restoreTokenForeground(fill)` | Map rectangle fill to `settings.foreground` |
-| `restoreFontStyle(textNode)` | Reconstruct `fontStyle` string from text node properties |
+| Function                       | Purpose                                                   |
+| ------------------------------ | --------------------------------------------------------- |
+| `restoreColorKey(name)`        | Strip `#` prefix from frame name to recover the token key |
+| `restoreColorValue(fill)`      | Map rectangle fill back to a `colors` hex value           |
+| `restoreTokenScope(name)`      | Strip `$`, split on `\                                    |
+| `restoreTokenForeground(fill)` | Map rectangle fill to `settings.foreground`               |
+| `restoreFontStyle(textNode)`   | Reconstruct `fontStyle` string from text node properties  |
+
+### Package vsix
+
+```sh
+vsce package
+```
+
+## Useful links
+
+(https://themes.vscode.one/)[https://themes.vscode.one/] visual editor where colors can be checked
