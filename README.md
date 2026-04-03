@@ -102,4 +102,4 @@ vsce package
 
 ## Useful links
 
-(https://themes.vscode.one/)[https://themes.vscode.one/] visual editor where colors can be checked
+- https://themes.vscode.one/ visual editor where colors can be checked
