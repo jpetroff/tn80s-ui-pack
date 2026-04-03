@@ -17,7 +17,7 @@
         "path": "./themes/tn80s-pure.json"
       },
       {
-        "label": "Tomorrow Night 80s Bright Chroma",
+        "label": "Tomorrow Night 80s Yellow Chroma",
         "uiTheme": "vs-dark",
         "path": "./themes/tn80s-chroma.json"
       }

@@ -5605,14 +5605,19 @@
           "type": "frame",
           "id": "wugQG",
           "name": "ra",
+          "width": "fill_container",
           "gap": 8,
+          "justifyContent": "end",
           "alignItems": "center",
           "children": [
             {
               "type": "text",
               "id": "hQrQk",
               "fill": "#383a49",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
               "content": "actionBar.toggledBackground",
+              "textAlign": "right",
               "fontFamily": "Inter",
               "fontSize": 10,
               "fontWeight": "normal"

@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(**)",
+      "mcp__context7__*"
+    ],
+    "deny": [
+      "Bash(kill *)",
+      "Bash(pkill *)",
+      "Bash(killall *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(aria2c *)",
+      "Bash(ftp *)",
+      "Bash(nc *)",
+      "Bash(bash -c *)",
+      "Bash(sh -c *)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf /../*)",
+      "Bash(rm -rf /home/*)",
+      "Bash(rm -rf /etc/*)",
+      "Bash(rm -rf /var/*)",
+      "Bash(rm -rf /bin/*)",
+      "Bash(rm -rf /usr/*)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "sandbox": {
+    "network": {},
+    "filesystem": {
+      "allowWrite": [
+        "**"
+      ],
+      "allowRead": [
+        "**"
+      ],
+      "allowManagedReadPathsOnly": true
+    }
+  },
+  "toolConfig": {
+    "autoAllowBashIfSandboxed": true
+  }
+}

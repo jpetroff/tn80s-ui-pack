@@ -974,18 +974,10 @@
         "foreground": "#999999ff"
       }
     },
-    {
-      "scope": [
-        "markup.heading"
-      ],
-      "settings": {
-        "fontStyle": ""
-      }
-    }
   ],
-  // "semanticTokenColors": {
-  //   "variable.local": "#89b4fd"
-  //   "function.local": "#89b4fd"
-  // },
+  "semanticTokenColors": {
+    "variable.local": "#89b4fd",
+    "function.local": "#89b4fd"
+  },
   "semanticHighlighting": true
 }
