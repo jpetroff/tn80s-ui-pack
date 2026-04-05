@@ -79,7 +79,7 @@ node src/generate-json.js tn80s-pure.pen themes/tn80s-pure-restored.json
 #### watch mode
 
 ```sh
-node src/generate-json.js --watch tn80s-pure.pen themes/tn80s-pure.json
+node src/generate-json.js --watch src/tn80s-chroma.pen themes/tn80s-chroma.json
 ```
 
 ### Reverse transformations
